@@ -1,3 +1,5 @@
+//ta certinho, Augusto esteve aqui lkkkkk
+
 nome = 'teste'
 senha = '1234'
 cnome = input('Digite seu login: ')
