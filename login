@@ -50,7 +50,7 @@ livros = ["Dom Quixote - Miguel de Cervantes",
 
 ##cadastro de usuários
 while True:
-    if c == '2':
+    
     c = input('Gostaria de cadastrar um novo usuário? Digite 1.Sim ou 2.Não:  ')
     if c == '2':
         break
