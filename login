@@ -1,7 +1,7 @@
 nomes_usuarios = []
 csenha = []
 livros_emprestado = []
-i = '2'
+c = '2'
 livros = ["Dom Quixote - Miguel de Cervantes",
     "Ulisses - James Joyce",
     "Cem Anos de Solidão - Gabriel García Márquez",
@@ -50,13 +50,20 @@ livros = ["Dom Quixote - Miguel de Cervantes",
 
 ##cadastro de usuários
 while True:
-    i = input('Gostaria de cadastrar um novo usuário? Digite 1.Sim ou 2.Não:  ')
     if i == '2':
+    c = input('Gostaria de cadastrar um novo usuário? Digite 1.Sim ou 2.Não:  ')
+    if c == '2':
         break
     nome = input('Digite o nome do usuário: ')
     senha = input('Digite uma senha para o usuario: ')
     nomes_usuarios.append(nome)
     csenha.append(senha)
     
-    
+   
 ## tela de login
+
+
+
+## Consulta livros
+for i, j in enumerate (livros):
+    print(f'{i} - {j}')
