@@ -1,16 +1,7 @@
-nome = 'teste'
-senha = '1234'
-cnome = input('Digite seu login: ')
-csenha = input('Digite sua senha: ')
-if cnome == nome and csenha == senha:
-        print('Login efetuado com sucesso!')
-while cnome != nome or csenha != senha:
-    print('Login ou senha incorreta, digite novamente!')
-    cnome = input('Digite seu login: ')
-    csenha = input('Digite sua senha: ')
-    if cnome == nome and csenha == senha:
-        print('Login efetuado com sucesso!')
-        break
+nomes_usuarios = []
+csenha = []
+livros_emprestado = []
+i = '2'
 livros = ["Dom Quixote - Miguel de Cervantes",
     "Ulisses - James Joyce",
     "Cem Anos de Solidão - Gabriel García Márquez",
@@ -56,3 +47,16 @@ livros = ["Dom Quixote - Miguel de Cervantes",
     "As Crônicas de Nárnia - C.S. Lewis",
     "A Culpa é das Estrelas - John Green",
     "A Menina que Roubava Livros - Markus Zusak",]
+
+##cadastro de usuários
+while True:
+    i = input('Gostaria de cadastrar um novo usuário? Digite 1.Sim ou 2.Não:  ')
+    if i == '2':
+        break
+    nome = input('Digite o nome do usuário: ')
+    senha = input('Digite uma senha para o usuario: ')
+    nomes_usuarios.append(nome)
+    csenha.append(senha)
+    
+    
+## tela de login
