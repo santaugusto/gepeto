@@ -1,7 +1,9 @@
 nomes_usuarios = []
 csenha = []
-livros_emprestado = []
+livrosEemprestados = []
+livrosDevolvidos = []
 c = '2'
+l = '2'
 livros = ["Dom Quixote - Miguel de Cervantes",
     "Ulisses - James Joyce",
     "Cem Anos de Solidão - Gabriel García Márquez",
@@ -48,6 +50,7 @@ livros = ["Dom Quixote - Miguel de Cervantes",
     "A Culpa é das Estrelas - John Green",
     "A Menina que Roubava Livros - Markus Zusak",]
 
+
 ##cadastro de usuários
 while True:
     
@@ -59,11 +62,26 @@ while True:
     nomes_usuarios.append(nome)
     csenha.append(senha)
     
-   
-## tela de login
+# Cadastro de livros
 
+while True:
+    l = input('Gostaria de cadastrar um novo livro? Digite 1.Sim ou 2.Não:  ')
+    if l == '2':
+        break
+    livro = input('Digite o titulo do livro e escritor separado por "-": ')
+    livros.append(livro)
 
-
-## Consulta livros
-for i, j in enumerate (livros):
-    print(f'{i} - {j}')
+## tela de pesquisa
+while True:
+    p = input( '''
+            - Gostaria de procurar um livro? Digite 1.Sim ou 2.Não 
+            - Siga o exemplo para realizar a cosulta: 
+            "A Menina que Roubava Livros - Markus Zusak" 
+             ''')
+    if p == '2':
+     break
+    livro_procurado = input('pesquisa:')
+    if livro_procurado in livros:
+     print( 'livro disponivel')
+    else:
+      print('livro indisponivel')
