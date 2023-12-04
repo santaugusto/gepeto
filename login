@@ -2,8 +2,8 @@ nomes_usuarios = []
 csenha = []
 livrosEemprestados = []
 livrosDevolvidos = []
-c = '2'
-l = '2'
+c = '2' #não precisa criar essa variarel já que lá embaixo vc cria de novo usando o input()
+l = '2' #não precisa criar essa variarel já que lá embaixo vc cria de novo usando o input()
 livros = ["Dom Quixote - Miguel de Cervantes",
     "Ulisses - James Joyce",
     "Cem Anos de Solidão - Gabriel García Márquez",
